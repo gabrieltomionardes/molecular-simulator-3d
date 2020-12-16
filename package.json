@@ -1,0 +1,16 @@
+{
+  "name": "molecular-simulator-3d",
+  "version": "1.0.0",
+  "description": "Simulador Molecular 3D",
+  "main": "src/start.ts",
+  "scripts": {
+    "start": "ts-node src/start"
+  },
+  "keywords": [],
+  "author": "Gabriel Tomio Nardes",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
