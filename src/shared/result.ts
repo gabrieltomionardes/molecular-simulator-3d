@@ -6,15 +6,15 @@ type ResultProps<T> = {
 
 export class Result<T> {
   private readonly _isSuccess: boolean
-  private readonly _value: T
-  private readonly _error: Error
+  private readonly _value: T | null
+  private readonly _error: Error | null
   private constructor (props: ResultProps<T>) {
     this._isSuccess = props.isSuccess
-    this._value = props.value
-    this._error = props.error
+    this._value = props.value || null
+    this._error = props.error || null
   }
 
-  public static ok<R>(value: R): Result<R> {
+  public static ok<R> (value: R): Result<R> {
     return new Result({ isSuccess: true, value })
   }
 
@@ -22,15 +22,15 @@ export class Result<T> {
     return new Result({ isSuccess: false, error })
   }
 
-  public get value (): T {
+  public get value (): T | null {
     return this._value
   }
 
-  public get isFailure(): boolean {
+  public get isFailure (): boolean {
     return !this._isSuccess
   }
 
-  public get error(): Error {
+  public get error (): Error | null {
     return this._error
   }
 }
