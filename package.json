@@ -2,9 +2,8 @@
   "name": "molecular-simulator-3d",
   "version": "1.0.0",
   "description": "Simulador Molecular 3D",
-  "main": "src/start.ts",
+  "main": "",
   "scripts": {
-    "start": "ts-node src/start",
     "test": "jest"
   },
   "keywords": [],
