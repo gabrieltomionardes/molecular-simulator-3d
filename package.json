@@ -4,7 +4,7 @@
   "description": "Simulador Molecular 3D",
   "main": "",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch"
   },
   "keywords": [],
   "author": "Gabriel Tomio Nardes",
